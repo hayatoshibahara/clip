@@ -1,0 +1,740 @@
+🟩 Torch: 2.8.0+cu128
+🟩 CLIP: v1.0
+🟩 SimpleTokenizerを初期化開始 bpe_path='clip/clip/bpe_simple_vocab_16e6.txt.gz'
+🟦 読み込んだマージルール数: 262146
+🟦 使用するマージルール数: 48894
+🟩 SimpleTokenizerの初期化終了
+🟩 encode開始 text='こんにちは！'
+🟦 pre_tokenized=['こんにちは', '!']...
+🟩 bpe開始 token='ãģĵãĤĵãģ«ãģ¡ãģ¯'
+🟩 bpe終了 word='ãģ ĵ ãĤ ĵ ãģ « ãģ ¡ ãģ ¯</w>'
+🟩 bpe開始 token='!'
+🟩 encode終了 bpe_tokens=[4813, 241, 3909, 241, 4813, 104, 4813, 94, 4813, 363, 256]
+🟩 decode開始 tokens=[4813, 241, 3909, 241, 4813, 104, 4813, 94, 4813, 363, 256]
+🟩 decode終了 text='こんにちは ! '
+🟩 tokenize開始 texts=['こんにちは！'], context_length=77, truncate=False
+🟦 sot_token=49406, eot_token=49407
+🟩 encode開始 text='こんにちは！'
+🟦 pre_tokenized=['こんにちは', '!']...
+🟩 bpe開始 token='ãģĵãĤĵãģ«ãģ¡ãģ¯'
+🟩 bpe開始 token='!'
+🟩 encode終了 bpe_tokens=[4813, 241, 3909, 241, 4813, 104, 4813, 94, 4813, 363, 256]
+🟩 tokenize終了 result.shape=torch.Size([1, 77])
+🟩 CLIPを初期化開始 embed_dim=512, image_resolution=224, vision_layers=12, vision_width=768, vision_patch_size=32, context_length=77, vocab_size=49408, transformer_width=512, transformer_heads=8, transformer_layers=12
+🟦 Vision Transformerを使用
+🟦 vision_heads=12
+🟩 VisionTransformerを初期化開始 input_resolution=224, patch_size=32, width=768, layers=12, heads=12, output_dim=512
+🟦 scale=0.03608439182435161
+🟩 Transformerを初期化開始 width=768, layers=12, heads=12, attn_mask is None=True
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=768, n_head=12, attn_mask is None=True
+🟩 attn_maskの形状: None
+🟩 ResidualAttentionBlockの初期化終了
+🟩 Transformerの初期化終了
+🟩 VisionTransformerの初期化終了
+🟩 CLIPのアテンションマスク作成開始
+🟩 CLIPのアテンションマスク作成終了 mask.shape=torch.Size([77, 77])
+🟩 Transformerを初期化開始 width=512, layers=12, heads=8, attn_mask is None=False
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 ResidualAttentionBlockを初期化開始 d_model=512, n_head=8, attn_mask is None=False
+🟩 attn_maskの形状: torch.Size([77, 77])
+🟩 ResidualAttentionBlockの初期化終了
+🟩 Transformerの初期化終了
+🟦 self.logit_scale=Parameter containing:
+tensor(2.6593, requires_grad=True)
+🟩 CLIPのパラメータ初期化開始
+🟦 proj_std=0.009021097956087904
+🟦 attn_std=0.04419417382415922
+🟦 fc_std=0.03125
+🟩 CLIPのパラメータ初期化終了
+🟩 CLIPの初期化終了
+🟦 STREAM b'IHDR' 16 13
+🟦 STREAM b'iCCP' 41 753
+🟦 iCCP profile name b'ICC Profile'
+🟦 Compression method 0
+🟦 STREAM b'pHYs' 806 9
+🟦 STREAM b'IDAT' 827 8192
+🟦 Error closing: Operation on closed image
+🟦 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+🟦 STREAM b'IHDR' 16 13
+🟦 STREAM b'iCCP' 41 2625
+🟦 iCCP profile name b'ICC Profile'
+🟦 Compression method 0
+🟦 STREAM b'pHYs' 2678 9
+🟦 STREAM b'iTXt' 2699 3122
+🟦 STREAM b'IDAT' 5833 16384
+🟦 Error closing: Operation on closed image
+🟦 STREAM b'IHDR' 16 13
+🟦 STREAM b'iCCP' 41 3168
+🟦 iCCP profile name b'ICC profile'
+🟦 Compression method 0
+🟦 STREAM b'pHYs' 3221 9
+🟦 STREAM b'tIME' 3242 7
+🟦 b'tIME' 3242 7 (unknown)
+🟦 STREAM b'tEXt' 3261 44
+🟦 STREAM b'IDAT' 3317 8192
+🟦 Error closing: Operation on closed image
+🟦 STREAM b'IHDR' 16 13
+🟦 STREAM b'pHYs' 41 9
+🟦 STREAM b'IDAT' 62 8192
+🟦 Error closing: Operation on closed image
+🟦 STREAM b'IHDR' 16 13
+🟦 STREAM b'pHYs' 41 9
+🟦 STREAM b'tIME' 62 7
+🟦 b'tIME' 62 7 (unknown)
+🟦 STREAM b'IDAT' 81 8192
+🟦 Error closing: Operation on closed image
+🟦 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+🟩 tokenize開始 texts=['This is a page of text about segmentation', 'This is a facial photo of a tabby cat', 'This is a portrait of an astronaut with the American flag', 'This is a rocket standing on a launchpad', 'This is a person looking at a camera on a tripod', 'This is a cup of coffee on a saucer'], context_length=77, truncate=False
+🟦 sot_token=49406, eot_token=49407
+🟩 encode開始 text='This is a page of text about segmentation'
+🟦 pre_tokenized=['this', 'is', 'a', 'page', 'of', 'text', 'about', 'segmentation']...
+🟩 bpe開始 token='this'
+🟩 bpe終了 word='this</w>'
+🟩 bpe開始 token='is'
+🟩 bpe終了 word='is</w>'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='page'
+🟩 bpe終了 word='page</w>'
+🟩 bpe開始 token='of'
+🟩 bpe終了 word='of</w>'
+🟩 bpe開始 token='text'
+🟩 bpe終了 word='text</w>'
+🟩 bpe開始 token='about'
+🟩 bpe終了 word='about</w>'
+🟩 bpe開始 token='segmentation'
+🟩 bpe終了 word='seg mentation</w>'
+🟩 encode終了 bpe_tokens=[589, 533, 320, 2504, 539, 4160, 781, 10551, 9512]
+🟩 encode開始 text='This is a facial photo of a tabby cat'
+🟦 pre_tokenized=['this', 'is', 'a', 'facial', 'photo', 'of', 'a', 'tabby', 'cat']...
+🟩 bpe開始 token='this'
+🟩 bpe開始 token='is'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='facial'
+🟩 bpe終了 word='facial</w>'
+🟩 bpe開始 token='photo'
+🟩 bpe終了 word='photo</w>'
+🟩 bpe開始 token='of'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='tabby'
+🟩 bpe終了 word='tabby</w>'
+🟩 bpe開始 token='cat'
+🟩 bpe終了 word='cat</w>'
+🟩 encode終了 bpe_tokens=[589, 533, 320, 11909, 1125, 539, 320, 36145, 2368]
+🟩 encode開始 text='This is a portrait of an astronaut with the American flag'
+🟦 pre_tokenized=['this', 'is', 'a', 'portrait', 'of', 'an', 'astronaut', 'with', 'the', 'american', 'flag']...
+🟩 bpe開始 token='this'
+🟩 bpe開始 token='is'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='portrait'
+🟩 bpe終了 word='portrait</w>'
+🟩 bpe開始 token='of'
+🟩 bpe開始 token='an'
+🟩 bpe終了 word='an</w>'
+🟩 bpe開始 token='astronaut'
+🟩 bpe終了 word='astronaut</w>'
+🟩 bpe開始 token='with'
+🟩 bpe終了 word='with</w>'
+🟩 bpe開始 token='the'
+🟩 bpe終了 word='the</w>'
+🟩 bpe開始 token='american'
+🟩 bpe終了 word='american</w>'
+🟩 bpe開始 token='flag'
+🟩 bpe終了 word='flag</w>'
+🟩 encode終了 bpe_tokens=[589, 533, 320, 5352, 539, 550, 18376, 593, 518, 2151, 4859]
+🟩 encode開始 text='This is a rocket standing on a launchpad'
+🟦 pre_tokenized=['this', 'is', 'a', 'rocket', 'standing', 'on', 'a', 'launchpad']...
+🟩 bpe開始 token='this'
+🟩 bpe開始 token='is'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='rocket'
+🟩 bpe終了 word='rocket</w>'
+🟩 bpe開始 token='standing'
+🟩 bpe終了 word='standing</w>'
+🟩 bpe開始 token='on'
+🟩 bpe終了 word='on</w>'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='launchpad'
+🟩 bpe終了 word='launch pad</w>'
+🟩 encode終了 bpe_tokens=[589, 533, 320, 8383, 2862, 525, 320, 31168, 7601]
+🟩 encode開始 text='This is a person looking at a camera on a tripod'
+🟦 pre_tokenized=['this', 'is', 'a', 'person', 'looking', 'at', 'a', 'camera', 'on', 'a', 'tripod']...
+🟩 bpe開始 token='this'
+🟩 bpe開始 token='is'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='person'
+🟩 bpe終了 word='person</w>'
+🟩 bpe開始 token='looking'
+🟩 bpe終了 word='looking</w>'
+🟩 bpe開始 token='at'
+🟩 bpe終了 word='at</w>'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='camera'
+🟩 bpe終了 word='camera</w>'
+🟩 bpe開始 token='on'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='tripod'
+🟩 bpe終了 word='tripod</w>'
+🟩 encode終了 bpe_tokens=[589, 533, 320, 2533, 1312, 536, 320, 3934, 525, 320, 36141]
+🟩 encode開始 text='This is a cup of coffee on a saucer'
+🟦 pre_tokenized=['this', 'is', 'a', 'cup', 'of', 'coffee', 'on', 'a', 'saucer']...
+🟩 bpe開始 token='this'
+🟩 bpe開始 token='is'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='cup'
+🟩 bpe終了 word='cup</w>'
+🟩 bpe開始 token='of'
+🟩 bpe開始 token='coffee'
+🟩 bpe終了 word='coffee</w>'
+🟩 bpe開始 token='on'
+🟩 bpe開始 token='a'
+🟩 bpe開始 token='saucer'
+🟩 bpe終了 word='saucer</w>'
+🟩 encode終了 bpe_tokens=[589, 533, 320, 1937, 539, 2453, 525, 320, 42272]
+🟩 tokenize終了 result.shape=torch.Size([6, 77])
+🟩 画像エンコード開始 image.shape=torch.Size([6, 3, 224, 224])
+🟩 VisionTransformerの順伝播開始 x.shape=torch.Size([6, 3, 224, 224])
+🟦 conv1 x.shape=torch.Size([6, 768, 7, 7])
+🟦 reshape x.shape=torch.Size([6, 768, 49])
+🟦 permute x.shape=torch.Size([6, 49, 768])
+🟦 cat x.shape=torch.Size([6, 50, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([6, 50, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([6, 50, 768]), ret.dtype=torch.float32
+🟦 permute x.shape=torch.Size([50, 6, 768])
+🟩 Transformerの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([50, 6, 768])
+🟦 attn_maskの形状: None
+🟩 attention計算終了 result.shape=torch.Size([50, 6, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([50, 6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([50, 6, 768]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([50, 6, 3072])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([50, 6, 3072])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟩 Transformerの順伝播終了 x.shape=torch.Size([50, 6, 768])
+🟦 permute x.shape=torch.Size([6, 50, 768])
+🟩 LayerNormの適用開始 x.shape=torch.Size([6, 768]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([6, 768]), ret.dtype=torch.float32
+🟦 expand x.shape=torch.Size([6, 768])
+🟦 proj x.shape=torch.Size([6, 512])
+🟩 VisionTransformerの順伝播終了 x.shape=torch.Size([6, 512])
+🟩 画像エンコード終了 image.shape=torch.Size([6, 512])
+🟩 テキストエンコード開始 text.shape=torch.Size([6, 77])
+🟦 token_embedding x.shape=torch.Size([6, 77, 512])
+🟦 permute x.shape=torch.Size([77, 6, 512])
+🟩 Transformerの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 ResidualAttentionBlockの順伝播開始 x.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 attention計算開始 x.shape=torch.Size([77, 6, 512])
+🟦 attn_maskの形状: torch.Size([77, 77])
+🟩 attention計算終了 result.shape=torch.Size([77, 6, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([77, 6, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([77, 6, 512]), ret.dtype=torch.float32
+🟩 QuickGELUの適用開始 x.shape=torch.Size([77, 6, 2048])
+🟩 QuickGELUの適用終了 res.shape=torch.Size([77, 6, 2048])
+🟩 ResidualAttentionBlockの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟩 Transformerの順伝播終了 x.shape=torch.Size([77, 6, 512])
+🟦 permute x.shape=torch.Size([6, 77, 512])
+🟩 LayerNormの適用開始 x.shape=torch.Size([6, 77, 512]), x.dtype=torch.float16
+🟩 LayerNormの適用終了 ret.shape=torch.Size([6, 77, 512]), ret.dtype=torch.float32
+🟦 text_projection x.shape=torch.Size([6, 512])
+🟩 テキストエンコード終了 x.shape=torch.Size([6, 512])
+🟦 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=18.0.
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=18.0 to DejaVu Sans ('/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+🟦 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=20.0.
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+🟦 findfont: score(FontEntry(fname='/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+🟦 findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=20.0 to DejaVu Sans ('/opt/miniconda/envs/py312/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
