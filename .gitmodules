@@ -1,0 +1,6 @@
+[submodule "clip"]
+	path = clip
+	url = git@github.com:openai/clip
+[submodule ".devcontainer"]
+	path = .devcontainer
+	url = git@github.com:hayatoshibahara/.devcontainer
